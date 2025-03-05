@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/Resources/Favicons/favicon.png"
+        />
+        <link rel="stylesheet" href="/Pages/style.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script>
+            window.addEventListener("DOMContentLoaded", (event) => {
+                fetch("/Pages/navbar.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById("navbar").innerHTML = data;
+                    });
+                fetch("/Pages/socials.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById("socials").innerHTML = data;
+                    });
+            });
+        </script>
+    </head>
+
+    <body>
+        <!--Navigation Bar-->
+        <div id="navbar"></div>
+
+        <!--Background Image + Logo-->
+        <header>
+            <section class="logo-container">
+                <img
+                    src="/Resources/ParadiseLogo.png"
+                    id="Logo-Image"
+                    alt="Team 1165 Logo"
+                />
+                <img
+                    src="/Resources/Homepage-Picture.jpg"
+                    id="Background-Image"
+                    alt="Background Image"
+                />
+            </section>
+        </header>
+
+        <main>
+            <section id="main-section">
+                <section id="home-section">
+                    <!-- About Us -->
+                    <section class="section-white">
+                        <header>
+                            <h2 class="header2">About Us</h2>
+                        </header>
+                        <section class="text-image-chunk" id="about-us">
+                            <img
+                                src="/Resources/Team Paradise Yearbook Photo.jpeg"
+                                id="about-us-image"
+                                alt="Team Picture"
+                            />
+                            <div id="about-us-text">
+                                Our team’s annual goal is to create a team of
+                                excited student that bring academic knowledge to
+                                robotics competition. We are part of the
+                                <i>FIRST</i> (For Inspiration and Recognition of
+                                Science and Technology) and participate in
+                                <i>FIRST</i> Robotics Competitions (FRC).
+                                <br />
+                                <br />
+                                FRC combines the excitement of competition with
+                                rigors of science and technology. Under strict
+                                rules, limited resources are challenged to
+                                engineer robot to preform a set of tasks against
+                                a field of competitors, raise funds, design a
+                                team “brand”, and hone teamwork skills.
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- Projects -->
+                    <section class="section-gray">
+                        <header>
+                            <h2 class="header2">Projects</h2>
+                        </header>
+                        <section class="text-image-chunk" id="Rhino-2024">
+                            <p id="projects">
+                                For the 2024 FRC CRESCENDO Season, Team Paradise
+                                built "The Rhino".<br /><br />
+                                Hueneme Port (California)<br /><br />
+                                AZ Valley - Gracious Professionalism Award
+                                Winner, Alliance Captain<br /><br />
+                                AZ East - Gracious Professionalism Award Winner,
+                                1st pick of 6th Seed Alliance.<br />
+                            </p>
+                            <img
+                                src="/Resources/Rhino-2024.jpg"
+                                id="projects-image-Rhino-2024"
+                                alt="Team Picture"
+                            />
+                        </section>
+                    </section>
+
+                    <!-- Leaders -->
+                    <section class="section-white" id="leaders">
+                        <header>
+                            <h2 class="header2">Leaders</h2>
+                        </header>
+                        <p class="leaders-title">Teacher Sponsors</p>
+                        <section id="head-mentors">
+                            <ul class="leaders-list">
+                                <li id="lead-coach-1">
+                                    <div>Melanie Young</div>
+                                    <span> Head Coach </span>
+                                </li>
+                                <!-- <li id="lead-coach-2">
+                                    <div>Alex Ruiz</div>
+                                    <span> Coach </span>
+                                </li> -->
+                            </ul>
+                        </section>
+
+                        <p class="leaders-title">Mentors</p>
+                        <section id="mentors-1">
+                            <ul class="leaders-list">
+                                <!-- <li>
+                                    <div>N/A</div>
+                                    <span> Build & Strategy </span>
+                                </li> -->
+                                <li>
+                                    <div>Mike Moenich</div>
+                                    <span> Administration & Build </span>
+                                </li>
+                                <li>
+                                    <div>Gatlin Farrington</div>
+                                    <span> Electrical & Programming </span>
+                                </li>
+                                <li>
+                                    <div>Ken Whitley</div>
+                                    <span> Build </span>
+                                </li>
+                                <li>
+                                    <div>Charlotte Moenich</div>
+                                    <span> Administration & Strategy </span>
+                                </li>
+                                <li>
+                                    <div>Ethan Mullins</div>
+                                    <span> Build & Design </span>
+                                </li>
+                                <li>
+                                    <div>Mason Mills</div>
+                                    <span> Build & Design </span>
+                                </li>
+                                <li>
+                                    <div>John Studnicka</div>
+                                    <span> Programming & Web Design </span>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <p class="leaders-title">Officers</p>
+                        <section id="officers">
+                            <ul class="leaders-list">
+                                <li>
+                                    <div>Aneesa</div>
+                                    <span> President </span>
+                                </li>
+                                <li>
+                                    <div>Abby</div>
+                                    <span> Vice President </span>
+                                </li>
+                                <li>
+                                    <div>Lily</div>
+                                    <span> Treasurer </span>
+                                </li>
+                                <li>
+                                    <div>Lucius</div>
+                                    <span> Secretary </span>
+                                </li>
+                            </ul>
+                        </section>
+
+                        <p class="leaders-title">Captains</p>
+                        <section id="captains">
+                            <ul class="leaders-list">
+                                <li>
+                                    <div>Alexander</div>
+                                    <span> Captain of Build </span>
+                                </li>
+                                <li>
+                                    <div>Michael</div>
+                                    <span> Captain of Design </span>
+                                </li>
+                                <li>
+                                    <div>Andrew</div>
+                                    <span> Captain of CAD </span>
+                                </li>
+                                <li>
+                                    <div>Anthony</div>
+                                    <span> Captain of Electrical </span>
+                                </li>
+                                <li>
+                                    <div>Bridget</div>
+                                    <span> Captain of Media </span>
+                                </li>
+                                <li>
+                                    <div>Ashton</div>
+                                    <span> Captain of Programming </span>
+                                </li>
+                                <li>
+                                    <div>Lily</div>
+                                    <span> Captain of Safety </span>
+                                </li>
+                                <li>
+                                    <div>Kaylynn</div>
+                                    <span> Captain of Organization </span>
+                                </li>
+                                <li>
+                                    <div>Nic</div>
+                                    <span> Captain of Scouting </span>
+                                </li>
+                                <li>
+                                    <div>Aneesa</div>
+                                    <span> Captain of The Arts </span>
+                                </li>
+                            </ul>
+                        </section>
+                    </section>
+                </section>
+
+                <!-- Footer -->
+                <div id="socials"></div>
+            </section>
+        </main>
+    </body>
+</html>
