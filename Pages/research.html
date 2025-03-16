@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/Resources/Favicons/favicon.png"
+        />
+        <link rel="stylesheet" href="/Styles/style.css" />
+        <link rel="stylesheet" href="/Styles/research.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script>
+            window.addEventListener("DOMContentLoaded", (event) => {
+                fetch("/Pages/navbar.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById("navbar").innerHTML = data;
+                    });
+                fetch("/Pages/footer.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById("footer").innerHTML = data;
+                    });
+            });
+        </script>
+    </head>
+
+    <body>
+        <!--Navigation Bar-->
+        <div id="navbar"></div>
+
+        <!--Background Image + Logo-->
+        <header>
+            <section class="logo-container">
+                <img
+                    src="/Resources/full logo Justin.png"
+                    id="Logo-Image"
+                    alt="Jusitn Friedlander"
+                />
+                <img
+                    src="/Resources/Website Background.png"
+                    id="Background-Image"
+                    alt="Background Image"
+                />
+            </section>
+        </header>
+
+        <main>
+            <section id="main-section">
+                <section id="home-section">
+                    <!-- Projects -->
+                    <header>
+                        <h2 class="header2">Research</h2>
+                    </header>
+
+                    <!-- Integer Factorization -->
+                    <section class="section-white">
+                        <section class="text-image-chunk" id="research1">
+                            <section class="text-chunk">
+                                <h3 class="header3">
+                                    A Summation-Based Algorithm For Integer Factorization
+                                </h3>
+                                <br>
+                                <div>
+                                    Justin Friedlander<br>
+                                    March 2025<br>
+                                    Abstract: Numerous methods have been considered to create a fast
+                                    integer factorization algorithm. Despite its apparent simplicity,
+                                    the difficulty to find such an algorithm plays a crucial role in
+                                    modern cryptography, notably, in the security of RSA encryption.
+                                    Some approaches to factoring integers quickly include the Trial
+                                    Division method, Pollard's Rho and p-1 methods, and various Sieve
+                                    algorithms.<br><br>
+                                    This paper introduces a new method that converts an integer into a
+                                    sum in base-2. By combining a base-10 and base-2 representation of
+                                    the integer, an algorithm on the order of $\sqrt{n}$ time complexity
+                                    can convert that sum to a product of two integers, thus factoring
+                                    the original number.
+                                    <br>
+                                    <br>
+                                </div>
+                            </section>
+                            <iframe
+                                src="https://drive.google.com/file/d/1tlMxFTkEOIu57Y8is8MzAHmTgt5sIPG8/preview"
+                                scrolling="no"
+                                style="display: inline-block"
+                                class="research-pdf"
+                            ></iframe>                               
+                        </section>
+                    </section>
+
+                </section>
+
+                <!-- Footer -->
+                <div id="footer"></div>
+            </section>
+        </main>
+    </body>
+</html>

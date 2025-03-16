@@ -1,0 +1,158 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("../Resources/openSans.ttf");
+}
+
+html {
+    background-color: #e1e1e1;
+    font-family: OpenSans;
+}
+
+#nav-bar {
+    background-color: #43668d;
+    /*color: #e0e0e0;*/
+    color: #f4f4f4;
+    font-weight: 600;
+    border-color: #e0e0e0;
+}
+
+#nav-bar .page :hover {
+    color: #8f8fff;
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border-color: #000;
+    background: #c0c0c0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #000000;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #4343e6;
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw);
+    margin: 0;
+    background-color: #682349;
+}
+
+main {
+    width: 100%;
+    background-color: #682349;
+    z-index: 10;
+    color: white;
+}
+
+/* Logo + Background Image */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(85vh);
+    width: calc(100vw);
+}
+
+.logo-container #Logo-Image {
+    position: fixed;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    max-width: calc(60vw);
+    max-height: calc(40vh);
+}
+
+.logo-container #Background-Image {
+    position: fixed;
+    z-index: 0;
+    width: calc(100vw);
+    height: calc(100vh);
+    object-fit:fill;
+    object-position: bottom;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#Background-Image {
+    overflow: visible;
+    height: auto;
+}
+
+.section-white {
+    background-color: #9391c2;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.section-gray {
+    background-color: #7d7ca8;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.text-image-chunk {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.text-chunk {
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    flex: 1;
+}
+
+.header2 {
+    padding-top: none;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+}
+
+.header3 {
+    font-weight: 600;
+    font-size: xx-large;
+}
+
+#footer-box {
+    height: calc(5vh);
+    background-color: #43668d;
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 1000px) {
+    /* comes into effect for screens larger than or equal to 481 pixels */
+    nav {
+        width: 80%;
+        margin: 0;
+        margin-right: 5%;
+        font-size: 15px;
+    }
+
+    .text-image-chunk {
+        flex-wrap: wrap;
+    }
+}

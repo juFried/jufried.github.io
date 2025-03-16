@@ -1,0 +1,44 @@
+#nav-bar #home {
+    color: #a88297;
+    text-decoration: underline;
+}
+
+/* Home Content */
+
+/* About Me */
+#about-me-image {
+    width: 40%;
+    max-width: 600px;
+    height: 5%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#resume {
+    width: 20%;
+}
+
+/* Hobbies */
+#hobbies-image {
+    width: 80%;
+    max-width: 700px;
+    height: 80%;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+/*Mobile*/
+@media screen and (max-width: 1000px) {
+    /* comes into effect for screens larger than or equal to 481 pixels */
+
+    #about-us-image {
+        padding-bottom: 30px;
+    }
+
+    #about-me-text {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}

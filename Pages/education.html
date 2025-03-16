@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/Resources/full logo Justin.png"
+        />
+        <link rel="stylesheet" href="/Styles/style.css" />
+        <link rel="stylesheet" href="/Styles/education.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script>
+            window.addEventListener("DOMContentLoaded", (event) => {
+                fetch("/Pages/navbar.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById("navbar").innerHTML = data;
+                    });
+                fetch("/Pages/footer.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById("footer").innerHTML = data;
+                    });
+            });
+        </script>
+    </head>
+
+    <body>
+        <!--Navigation Bar-->
+        <div id="navbar"></div>
+
+        <!--Background Image + Logo-->
+        <header>
+            <section class="logo-container">
+                <img
+                    src="/Resources/full logo Justin.png"
+                    id="Logo-Image"
+                    alt="Jusitn Friedlander"
+                />
+                <img
+                    src="/Resources/Website Background.png"
+                    id="Background-Image"
+                    alt="Background Image"
+                />
+            </section>
+        </header>
+
+        <main>
+            <section id="main-section">
+                <section id="home-section">
+                    <header>
+                        <h2 class="header2">Education</h2>
+                    </header>
+                    <!-- Education -->
+                    <section class="section-white">
+                        <section class="two-column-chunk" id="education">
+                            <section class="left-column">
+                                <h3 class="header3">Formal Education</h3>
+                                <br><br>
+                                <div>
+                                    <h4 class="header4">Tufts University:</h4>
+                                    <ul class="bullets">
+                                        <li>Quantum Computing (CS 151)</li>
+                                        <li>Complex Variables (Math 133)</li>
+                                        <li>Linear Algebra (Math 70)</li>
+                                        <li>Calculus III (Math 42)</li>
+                                        <li>Data Structures (CS 15)</li>
+                                        <li>Modern Physics (Phy 13)</li>
+                                        <li>Intro to
+                                            Electricity and Magnetism (Phy 12)</li>
+                                        <li>Discrete Mathematics (CS 61)</li>
+                                    </ul>
+                                    
+                                    <br><br>
+                                    <h4 class="header4">Paradise Valley High School:</h4>
+                                    <ul class="bullets">
+                                        <li>AP Calculus BC</li>
+                                        <li>AP Computer Sceince A</li>
+                                        <li>AP Computer Science Principles</li>
+                                        <li>AP Statistics</li>
+                                        <li>AP Research</li>
+                                        <li>AP Seminar</li>
+                                        <li>AP US/Euro History</li>
+                                        <li>AP US Govt and Politics</li>
+                                        <li>AP Physics C: Mechanics</li>
+                                        <li>AP Chemistry</li>
+                                        <li>AP Biology</li>
+                                        <li>AP Spanish Language</li>
+                                        <li>AP Macroeconomics</li>
+                                        <li>AP Psychology</li>
+                                        <li>AP English Literature</li>
+                                        <li>AP English Language</li>
+                                    </ul>
+                                </div>
+                            </section>
+                            <section class="right-column">
+                                <header>
+                                    <h3 class="header3">Informal Education</h2>
+                                </header>
+                                <br><br>
+                                <div>
+                                    These are courses I have taken, and learned a lot from, but 
+                                    did not receive a formal certificate or transcript for
+                                    completion of the course.
+                                    <br><br>
+                                    <ul class="bullets">
+                                        <li>Quantum Computing 
+                                            (<a 
+                                            href="https://www.eecs.mit.edu/academics/iap-offerings/iap-2025/"
+                                            class="link">MIT Winter School</a>)
+                                        </li>
+                                        <li>Orbital Mechanics
+                                            (<a
+                                            href="https://www.youtube.com/watch?v=oUP2QsSDImY&list=PLeAC9P53bklf7Jcr4BRxMjSxGr9LzuAx3"
+                                            class="link">Carleton University</a>)
+                                        </li>
+                                        <li>Intro to Computer Science
+                                            (<a
+                                            href="https://pll.harvard.edu/course/cs50-introduction-computer-science"
+                                            class="link">Harvard</a>)
+                                        </li>
+                                        <li>Linear Algebra
+                                            (<a
+                                            href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+                                            class="link">MIT OCW</a>)
+                                        </li>
+                                        <li>Neural Networks
+                                            (<a
+                                            href="https://www.coursera.org/learn/nlp-sequence-models/paidmedia?utm_medium=sem&utm_source=gg&utm_campaign=b2c_namer_deep-learning_deeplearning-ai_ftcof_specializations_px_dr_bau_gg_sem_pr-bd_us-ca_en_m_hyb_17-08_x&campaignid=904733485&adgroupid=148411448815&device=c&keyword=&matchtype=&network=g&devicemodel=&creativeid=654837734386&assetgroupid=&targetid=dsa-2382188714383&extensionid=&placement=&gad_source=1&gclid=Cj0KCQjwytS-BhCKARIsAMGJyzo6PQKwqVJMP0KPx9cHUwEbvGXboTawQQssnyBwNwOgoE5Rs73qZeIaApJiEALw_wcB"
+                                            class="link">Coursera</a>)
+                                        </li>
+                                    </ul>
+                                    <br>
+                                    <br>
+                                    <h4 class="header4">In Progress:</h4>
+                                    <ul class="bullets">
+                                        <li>Differential Equations
+                                            (<a
+                                            href="https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/"
+                                            class="link">MIT OCW)
+                                        </li>
+                                    </ul>
+                                </div>                               
+                            </section>
+                        </section>
+                    </section>
+                
+                <!-- Footer -->
+                <div id="footer"></div>
+            </section>
+        </main>
+    </body>
+</html>

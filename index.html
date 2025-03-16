@@ -4,9 +4,10 @@
         <link
             rel="icon"
             type="image/x-icon"
-            href="/Resources/Favicons/favicon.png"
+            href="/Resources/full logo Justin.png"
         />
-        <link rel="stylesheet" href="/Pages/style.css" />
+        <link rel="stylesheet" href="/Styles/style.css" />
+        <link rel="stylesheet" href="/Styles/homepage.css" />
         <script src="https://cdn.tailwindcss.com"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -17,10 +18,10 @@
                     .then((data) => {
                         document.getElementById("navbar").innerHTML = data;
                     });
-                fetch("/Pages/socials.html")
+                fetch("/Pages/footer.html")
                     .then((response) => response.text())
                     .then((data) => {
-                        document.getElementById("socials").innerHTML = data;
+                        document.getElementById("footer").innerHTML = data;
                     });
             });
         </script>
@@ -34,12 +35,12 @@
         <header>
             <section class="logo-container">
                 <img
-                    src="/Resources/ParadiseLogo.png"
+                    src="/Resources/full logo Justin.png"
                     id="Logo-Image"
-                    alt="Team 1165 Logo"
+                    alt="Jusitn Friedlander"
                 />
                 <img
-                    src="/Resources/Homepage-Picture.jpg"
+                    src="/Resources/Website Background.png"
                     id="Background-Image"
                     alt="Background Image"
                 />
@@ -49,188 +50,89 @@
         <main>
             <section id="main-section">
                 <section id="home-section">
-                    <!-- About Us -->
+                    <header>
+                        <h2 class="header2">About Me</h2>
+                    </header>
+                    <!-- About Me -->
                     <section class="section-white">
-                        <header>
-                            <h2 class="header2">ABBbout Us</h2>
-                        </header>
-                        <section class="text-image-chunk" id="about-us">
+                        <section class="text-image-chunk" id="about-me">
                             <img
-                                src="/Resources/Team Paradise Yearbook Photo.jpeg"
-                                id="about-us-image"
+                                src="/Resources/Headshot.jpg"
+                                id="about-me-image"
                                 alt="Team Picture"
                             />
-                            <div id="about-us-text">
-                                Our team’s annual goal is to create a team of
-                                excited student that bring academic knowledge to
-                                robotics competition. We are part of the
-                                <i>FIRST</i> (For Inspiration and Recognition of
-                                Science and Technology) and participate in
-                                <i>FIRST</i> Robotics Competitions (FRC).
+                            <section class="text-chunk" id="about-me-text">
+                                <h3 class="header3">Justin Friedlander</h3>
+                                <a href="mailto:justinafriedlander@gmail.com" class="link">
+                                    justinafriedlander@gmail.com
+                                </a>
                                 <br />
-                                <br />
-                                FRC combines the excitement of competition with
-                                rigors of science and technology. Under strict
-                                rules, limited resources are challenged to
-                                engineer robot to preform a set of tasks against
-                                a field of competitors, raise funds, design a
-                                team “brand”, and hone teamwork skills.
-                            </div>
+                                <br /><br>
+                                <div id="about-me-text">
+                                    I am a freshman undergraduate at Tufts University in the
+                                    School of Engineering. My interests lie in theoretical
+                                    physics and pure mathematics. I also am interested in learning about algorithms,
+                                    especially as they apply to Machine Learning and Quantum Computing.
+                                    <br>
+                                    <br>
+                                </div>
+                                <iframe
+                                    src="https://drive.google.com/file/d/1DfIFmz2sQylWGxVowhRoHpCvbxnRDBH-/preview"
+                                    width="500"
+                                    height="400"
+                                    scrolling="no"
+                                    style="display: inline-block"
+                                ></iframe>                                
+                            </section>
                         </section>
                     </section>
 
-                    <!-- Projects -->
+                    <!-- Hobbies -->
                     <section class="section-gray">
-                        <header>
-                            <h2 class="header2">Projects</h2>
-                        </header>
-                        <section class="text-image-chunk" id="Rhino-2024">
-                            <p id="projects">
-                                For the 2024 FRC CRESCENDO Season, Team Paradise
-                                built "The Rhino".<br /><br />
-                                Hueneme Port (California)<br /><br />
-                                AZ Valley - Gracious Professionalism Award
-                                Winner, Alliance Captain<br /><br />
-                                AZ East - Gracious Professionalism Award Winner,
-                                1st pick of 6th Seed Alliance.<br />
-                            </p>
+                        <section class="text-image-chunk" id="hobbies">
+                            <section class="text-chunk" id="hobbies-text">
+                                <h3 class="header3">Hobbies</h3>
+                                <br>
+                                <div id="hobbies-text">
+                                    Outside of my classes, I am freshmen representative of the Tufts
+                                    Linux User Group, and I am a member of the Data Science Club and
+                                    the Society of Physics Students (SPS).
+                                    Furthermore, I enjoy expanding my education through online courses.
+                                    See a full list of courses I have taken 
+                                    <a href="/Pages/calendar.html" class="link">here</a>.
+                                    <br><br>
+                                    I also enjoy physical activity. I have recently gotten into
+                                    working out at the gym and dancing. Check out some dance videos
+                                    I made <a
+                                        href="https://youtube.com/playlist?list=PLhu95YBKBlTe1QxdxDE4iRttvWsWyVnTA&si=BJ72LDGlmL6Dlom_"
+                                        class="link">
+                                        here</a>.
+                                    <br><br>
+                                    Some sports I have competed in include Pole Vault, Bowling,
+                                    Tennis, Basketball, Soccer, Rubik's Cube, and more.
+                                    I also participated in the FIRST Robotics Competition (FRC) with
+                                    Team 1165, where we built life-sized robots from scratch to
+                                    compete and to showcase to children in the community.
+                                    In 2023, we competed at the World Championships in Houston, Texas.
+                                    <br><br>
+                                    Finally, I participated in chess tournaments where, at the age of 7,
+                                    I attended the World Youth Chess Championships and tied for 21st
+                                    before reaching a USCF rating of 1867 at just 9 years old.
+                                    Read more about my chess journey
+                                    <a href="https://justinchess.com/" class="link">here</a>.
+                                </div>                             
+                            </section>
                             <img
-                                src="/Resources/Rhino-2024.jpg"
-                                id="projects-image-Rhino-2024"
-                                alt="Team Picture"
+                                src="/Resources/Collage.png"
+                                id="hobbies-image"
+                                alt="Justin Chess"
                             />
-                        </section>
-                    </section>
-
-                    <!-- Leaders -->
-                    <section class="section-white" id="leaders">
-                        <header>
-                            <h2 class="header2">Leaders</h2>
-                        </header>
-                        <p class="leaders-title">Teacher Sponsors</p>
-                        <section id="head-mentors">
-                            <ul class="leaders-list">
-                                <li id="lead-coach-1">
-                                    <div>Melanie Young</div>
-                                    <span> Head Coach </span>
-                                </li>
-                                <!-- <li id="lead-coach-2">
-                                    <div>Alex Ruiz</div>
-                                    <span> Coach </span>
-                                </li> -->
-                            </ul>
-                        </section>
-
-                        <p class="leaders-title">Mentors</p>
-                        <section id="mentors-1">
-                            <ul class="leaders-list">
-                                <!-- <li>
-                                    <div>N/A</div>
-                                    <span> Build & Strategy </span>
-                                </li> -->
-                                <li>
-                                    <div>Mike Moenich</div>
-                                    <span> Administration & Build </span>
-                                </li>
-                                <li>
-                                    <div>Gatlin Farrington</div>
-                                    <span> Electrical & Programming </span>
-                                </li>
-                                <li>
-                                    <div>Ken Whitley</div>
-                                    <span> Build </span>
-                                </li>
-                                <li>
-                                    <div>Charlotte Moenich</div>
-                                    <span> Administration & Strategy </span>
-                                </li>
-                                <li>
-                                    <div>Ethan Mullins</div>
-                                    <span> Build & Design </span>
-                                </li>
-                                <li>
-                                    <div>Mason Mills</div>
-                                    <span> Build & Design </span>
-                                </li>
-                                <li>
-                                    <div>John Studnicka</div>
-                                    <span> Programming & Web Design </span>
-                                </li>
-                            </ul>
-                        </section>
-
-                        <p class="leaders-title">Officers</p>
-                        <section id="officers">
-                            <ul class="leaders-list">
-                                <li>
-                                    <div>Aneesa</div>
-                                    <span> President </span>
-                                </li>
-                                <li>
-                                    <div>Abby</div>
-                                    <span> Vice President </span>
-                                </li>
-                                <li>
-                                    <div>Lily</div>
-                                    <span> Treasurer </span>
-                                </li>
-                                <li>
-                                    <div>Lucius</div>
-                                    <span> Secretary </span>
-                                </li>
-                            </ul>
-                        </section>
-
-                        <p class="leaders-title">Captains</p>
-                        <section id="captains">
-                            <ul class="leaders-list">
-                                <li>
-                                    <div>Alexander</div>
-                                    <span> Captain of Build </span>
-                                </li>
-                                <li>
-                                    <div>Michael</div>
-                                    <span> Captain of Design </span>
-                                </li>
-                                <li>
-                                    <div>Andrew</div>
-                                    <span> Captain of CAD </span>
-                                </li>
-                                <li>
-                                    <div>Anthony</div>
-                                    <span> Captain of Electrical </span>
-                                </li>
-                                <li>
-                                    <div>Bridget</div>
-                                    <span> Captain of Media </span>
-                                </li>
-                                <li>
-                                    <div>Ashton</div>
-                                    <span> Captain of Programming </span>
-                                </li>
-                                <li>
-                                    <div>Lily</div>
-                                    <span> Captain of Safety </span>
-                                </li>
-                                <li>
-                                    <div>Kaylynn</div>
-                                    <span> Captain of Organization </span>
-                                </li>
-                                <li>
-                                    <div>Nic</div>
-                                    <span> Captain of Scouting </span>
-                                </li>
-                                <li>
-                                    <div>Aneesa</div>
-                                    <span> Captain of The Arts </span>
-                                </li>
-                            </ul>
                         </section>
                     </section>
                 </section>
 
                 <!-- Footer -->
-                <div id="socials"></div>
+                <div id="footer"></div>
             </section>
         </main>
     </body>
