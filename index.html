@@ -4,7 +4,7 @@
         <link
             rel="icon"
             type="image/x-icon"
-            href="/Resources/full logo Justin.png"
+            href="/Resources/Logo.png"
         />
         <link rel="stylesheet" href="/Styles/style.css" />
         <link rel="stylesheet" href="/Styles/homepage.css" />
@@ -13,10 +13,10 @@
 
         <script>
             window.addEventListener("DOMContentLoaded", (event) => {
-                fetch("/Pages/navbar.html")
+                fetch("/Pages/top-section.html")
                     .then((response) => response.text())
                     .then((data) => {
-                        document.getElementById("navbar").innerHTML = data;
+                        document.getElementById("top-section").innerHTML = data;
                     });
                 fetch("/Pages/footer.html")
                     .then((response) => response.text())
@@ -29,23 +29,7 @@
 
     <body>
         <!--Navigation Bar-->
-        <div id="navbar"></div>
-
-        <!--Background Image + Logo-->
-        <header>
-            <section class="logo-container">
-                <img
-                    src="/Resources/full logo Justin.png"
-                    id="Logo-Image"
-                    alt="Jusitn Friedlander"
-                />
-                <img
-                    src="/Resources/Website Background.png"
-                    id="Background-Image"
-                    alt="Background Image"
-                />
-            </section>
-        </header>
+        <div id="top-section"></div>
 
         <main>
             <section id="main-section">
@@ -106,14 +90,14 @@
                                     I made <a
                                         href="https://youtube.com/playlist?list=PLhu95YBKBlTe1QxdxDE4iRttvWsWyVnTA&si=BJ72LDGlmL6Dlom_"
                                         class="link">
-                                        here</a>.
+                                        here</a>. Some sports I have competed in include Pole Vault,
+                                    Bowling, Tennis, Basketball, Soccer, Rubik's Cube, and more.
                                     <br><br>
-                                    Some sports I have competed in include Pole Vault, Bowling,
-                                    Tennis, Basketball, Soccer, Rubik's Cube, and more.
-                                    I also participated in the FIRST Robotics Competition (FRC) with
-                                    Team 1165, where we built life-sized robots from scratch to
-                                    compete and to showcase to children in the community.
-                                    In 2023, we competed at the World Championships in Houston, Texas.
+                                    I also am an alumnus of Boys State and FRC. FRC, or the FIRST
+                                    Robotics Competition enables high school students to build
+                                    life-sized robots from scratch to compete and to showcase to
+                                    children in the community. In 2023, we competed at the World
+                                    Championships in Houston, Texas.
                                     <br><br>
                                     Finally, I participated in chess tournaments where, at the age of 7,
                                     I attended the World Youth Chess Championships and tied for 21st

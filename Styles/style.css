@@ -77,8 +77,8 @@ main {
     z-index: 1;
     width: auto;
     height: auto;
-    max-width: calc(60vw);
-    max-height: calc(40vh);
+    max-height: calc(70vh);
+    top: 55px;
 }
 
 .logo-container #Background-Image {
@@ -150,6 +150,10 @@ main {
         margin: 0;
         margin-right: 5%;
         font-size: 15px;
+    }
+
+    .logo-container {
+        height: calc(70vh);
     }
 
     .text-image-chunk {

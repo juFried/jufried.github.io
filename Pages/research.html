@@ -4,7 +4,7 @@
         <link
             rel="icon"
             type="image/x-icon"
-            href="/Resources/Favicons/favicon.png"
+            href="/Resources/Logo.png"
         />
         <link rel="stylesheet" href="/Styles/style.css" />
         <link rel="stylesheet" href="/Styles/research.css" />
@@ -13,10 +13,10 @@
 
         <script>
             window.addEventListener("DOMContentLoaded", (event) => {
-                fetch("/Pages/navbar.html")
+                fetch("/Pages/top-section.html")
                     .then((response) => response.text())
                     .then((data) => {
-                        document.getElementById("navbar").innerHTML = data;
+                        document.getElementById("top-section").innerHTML = data;
                     });
                 fetch("/Pages/footer.html")
                     .then((response) => response.text())
@@ -29,23 +29,8 @@
 
     <body>
         <!--Navigation Bar-->
-        <div id="navbar"></div>
+        <div id="top-section"></div>
 
-        <!--Background Image + Logo-->
-        <header>
-            <section class="logo-container">
-                <img
-                    src="/Resources/full logo Justin.png"
-                    id="Logo-Image"
-                    alt="Jusitn Friedlander"
-                />
-                <img
-                    src="/Resources/Website Background.png"
-                    id="Background-Image"
-                    alt="Background Image"
-                />
-            </section>
-        </header>
 
         <main>
             <section id="main-section">
@@ -87,7 +72,7 @@
                                 scrolling="no"
                                 style="display: inline-block"
                                 class="research-pdf"
-                            ></iframe>                               
+                            ></iframe> 
                         </section>
                     </section>
 
