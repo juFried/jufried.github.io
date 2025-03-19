@@ -6,18 +6,18 @@
 
 .research-pdf {
     flex: 1;
+    margin-top: 20vh;
+    height: 60vh;
 }
 
 /*Mobile*/
 @media screen and (max-width: 1000px) {
     /* comes into effect for screens larger than or equal to 481 pixels */
-    .text-image-chunk {
-        display: block;
-    }
-
+    
     .text-image-chunk iframe {
         margin-top: 50px;
         display: flex;
-        width: 100%;
+        width: 70%;
+        min-height: 40vh;
     }
 }

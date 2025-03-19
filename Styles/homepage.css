@@ -23,7 +23,7 @@
     width: 80%;
     max-width: 700px;
     height: 80%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -32,23 +32,15 @@
 /*Mobile*/
 @media screen and (max-width: 1000px) {
     /* comes into effect for screens larger than or equal to 481 pixels */
-    .text-image-chunk {
-        display: block;
-    }
 
-    .text-chunk {
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-    }
+    
 
     .text-chunk iframe {
         width: 100%;
     }
-
-
+    
     #hobbies-image {
         padding-top: 20px;
-        width: 60vw;
+        width: 100vw;
     }
 }
