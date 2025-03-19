@@ -8,6 +8,12 @@ html {
     font-family: OpenSans;
 }
 
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    width: 100vw; /* Ensures no extra width */
+}
+
+
 #nav-bar {
     background-color: #43668d;
     /*color: #e0e0e0;*/
