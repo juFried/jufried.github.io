@@ -25,6 +25,11 @@
                     });
             });
         </script>
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
     </head>
 
     <body>
@@ -40,6 +45,42 @@
                         <h2 class="header2">Research</h2>
                     </header>
 
+                    <!-- Integer Factorization Quantum -->
+                    <section class="section-gray">
+                        <section class="text-image-chunk" id="research2">
+                            <section class="text-chunk">
+                                <h3 class="header3">
+                                    A Summation-Based Algorithm For Integer Factorization: A Quantum Approach
+                                </h3>
+                                <br>
+                                <div>
+                                    Justin Friedlander<br>
+                                    May 2025<br>
+                                    Integer factorization is a problem at the core of modern cryptography
+                                    approaches such as RSA. As such, much effort has been put towards finding
+                                    a fast factorization algorithm. However, no classical algorithm has been
+                                    realized to efficiently factor two numbers. In 1994, Peter Shor discovered
+                                    an algorithm that could efficiently factor integers using quantum computers.
+                                    However, efforts still remain to make better classical or quantum
+                                    factorization methods.
+                                    <br><br>
+                                    This paper recalls a classical approach which runs an integer factorization
+                                    algorithm in \(O( \sqrt{n} )\) time. It then provides an outline for how to
+                                    improve this time complexity to \(O( n^{\frac{1}{4}} )\) by making use of the
+                                    Grover's Search algorithm on a quantum computer.
+                                    <br>
+                                    <br>
+                                </div>
+                            </section>
+                            <iframe
+                                src="https://drive.google.com/file/d/1ktAlzKhGMYXKDmV1ltsrCjojwutN5LRd/preview"
+                                scrolling="no"
+                                style="display: inline-block"
+                                class="research-pdf"
+                            ></iframe> 
+                        </section>
+                    </section>
+
                     <!-- Integer Factorization -->
                     <section class="section-white">
                         <section class="text-image-chunk" id="research1">
@@ -51,7 +92,7 @@
                                 <div>
                                     Justin Friedlander<br>
                                     March 2025<br>
-                                    Abstract: Numerous methods have been considered to create a fast
+                                    Numerous methods have been considered to create a fast
                                     integer factorization algorithm. Despite its apparent simplicity,
                                     the difficulty to find such an algorithm plays a crucial role in
                                     modern cryptography, notably, in the security of RSA encryption.
@@ -60,7 +101,7 @@
                                     algorithms.<br><br>
                                     This paper introduces a new method that converts an integer into a
                                     sum in base-2. By combining a base-10 and base-2 representation of
-                                    the integer, an algorithm on the order of $\sqrt{n}$ time complexity
+                                    the integer, an algorithm on the order of \(\sqrt{n}\) time complexity
                                     can convert that sum to a product of two integers, thus factoring
                                     the original number.
                                     <br>
