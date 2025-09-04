@@ -34,6 +34,10 @@
     content: "-";
 }
 
+#footnote {
+    padding-top: 5vh;
+    padding-left: 5vw;
+}
 
 /*Mobile*/
 @media screen and (max-width: 1000px) {
