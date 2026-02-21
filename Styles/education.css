@@ -42,7 +42,13 @@
 .gap {
     display: inline-block;
     width: 2em;
-  }
+}
+
+
+
+.full-bullets li::before {
+    content: "-";
+}
 
 /*Mobile*/
 @media screen and (max-width: 1000px) {
