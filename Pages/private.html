@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/Resources/Logo.png"
+        />
+        <link rel="stylesheet" href="/Styles/style.css" />
+        <link rel="stylesheet" href="/Styles/research.css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <script>
+            window.addEventListener("DOMContentLoaded", (event) => {
+                fetch("/Pages/top-section.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById("top-section").innerHTML = data;
+                    });
+                fetch("/Pages/footer.html")
+                    .then((response) => response.text())
+                    .then((data) => {
+                        document.getElementById("footer").innerHTML = data;
+                    });
+            });
+        </script>
+
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async
+                src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    </head>
+
+    <body>
+        <!--Navigation Bar-->
+        <div id="top-section"></div>
+
+
+        <main>
+            <section id="main-section">
+                <section id="home-section">
+                    <!-- Notes -->
+                    <header>
+                        <h2 class="header2">Notes</h2>
+                    </header>
+                    <!-- Title of Notes -->
+                    <section class="section-white">
+                        <section class="text-image-chunk" id="talk2">
+                            <section class="text-chunk">
+                                <h3 class="header3">
+                                    Title of Notes
+                                </h3>
+                                <br>
+                                <div>
+                                    Enter Comments Here...
+                                </div>
+                            </section>
+                        </section>
+                    </section>
+
+                </section>
+
+                <!-- Footer -->
+                <div id="footer"></div>
+            </section>
+        </main>
+    </body>
+</html>
